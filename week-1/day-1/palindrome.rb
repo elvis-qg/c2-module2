@@ -1,9 +1,6 @@
 def palindrome?(sentence)
-    sentence.downcase!.tr!(' ', '')
-    if sentence == sentence.reverse 
-        return true
-    end
-    return false    
+    copy_sentence = sentence.downcase.delete(' ')
+    copy_sentence == copy_sentence.reverse    
 end
 
-puts palindrome?("Ana    ana")
+puts palindrome?("123A 3 a321")
