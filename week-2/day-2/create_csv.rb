@@ -13,7 +13,7 @@ Student = Struct.new(:name, :email)
 # end
 #
 
-# Generates a CSV a CSV file from the students.
+# Generates a CSV file from the students.
 =begin
 def generate_csv(students)
   CSV.open("./user_data.csv", "wb") do |csv|
@@ -25,6 +25,7 @@ def generate_csv(students)
 end
 =end
 
+# Generates a CSV string from the students.
 #=begin
 def generate_csv(students)
   csv_string = CSV.generate do |csv|
